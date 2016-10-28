@@ -5,18 +5,26 @@
 #define HEADER_H
 using namespace std;
 
+typedef char Elt;
+
 typedef struct Noeud {
-	char etiquette;
+	Elt e;
 	struct Noeud *ag;
 	struct Noeud *ad;
 } Noeud;
 
-typedef Noeud* Arbre;
+typedef Noeud *Abin;
 
 void menu();
-Arbre arbnouv();
-void enraciner();
-int hauteur();
-bool est_vide();
+Abin arbnouv();
+Abin enracine(Elt e,Abin ag,Abin ad);
+Abin gauche(Abin a);
+Abin droite(Abin a);
+Elt consulterNoeud(Abin a);
+void parcoursPrefixe(Abin a);
+void parcoursInfixe(Abin a);
+void parcoursPostfixe(Abin a);
+int hauteur(Abin a);
+bool est_vide(Abin a);
 
 #endif
