@@ -77,7 +77,7 @@ void parcoursPostfixe(Abin A);
 int hauteur(Abin A);
 
 ///////////////////////////////////////////////////////
-// Cette fonction permet de vérifié si l'arbre est vide
+// Cette fonction permet de vérifier si l'arbre est vide
 // Paramètre : L'arbre donné
 // Retourne : Vrai si l'arbre est vide Faux sinon
 ///////////////////////////////////////////////////////

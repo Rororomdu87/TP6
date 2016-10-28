@@ -51,6 +51,10 @@ void parcoursPrefixe(Abin A)
 			parcoursPrefixe(droite(A));
 		}
 	}
+	else
+	{
+		cout << "L'arbre est vide" << endl;
+	}
 }
 
 void parcoursInfixe(Abin A)
@@ -67,6 +71,10 @@ void parcoursInfixe(Abin A)
 			parcoursInfixe(droite(A));
 		}
 	}
+	else
+	{
+		cout << "L'arbre est vide" << endl;
+	}
 }
 
 void parcoursPostfixe(Abin A)
@@ -82,6 +90,10 @@ void parcoursPostfixe(Abin A)
 			parcoursPostfixe(droite(A));
 		}
 		cout << (*A).e << " ";
+	}
+	else
+	{
+		cout << "L'arbre est vide" << endl;
 	}
 }
 
